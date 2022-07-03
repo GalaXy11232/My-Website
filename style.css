@@ -42,6 +42,17 @@ body {
     background-color: rgb(153, 57, 201);
     color:white;
 }
+#links-btn {
+    background-color: darkslategray; 
+    padding: 6px;
+    color: peachpuff; 
+    border: 1px solid orange;
+    border-radius: 7px;
+}
+#links-btn:hover {
+    background-color: slategray;
+    color: white;
+}
 
 #buttons {
     border: none;
@@ -61,14 +72,14 @@ body {
     display: block;
 }
 
-#showstuff {
+#showstuff-container {
     display: block;
     margin: 0 auto;
     overflow-y: scroll;
     border: 3px solid black;
     border-radius: 10px;
     width: 85%;
-    height: 300px;
+    height: 400px;
 }
 
 #sidebar {

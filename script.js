@@ -1,47 +1,32 @@
 window.addEventListener('load', () => {
-    let yes = [
+    let abme = [
         'I like programming',
         'I like maths',
         'I go outside',
         'my first programming language was not Python',
         'I know some C++',
         'I made games in Scratch',
-        'I have a <a class = \'links\' href = \'https://github.com/GalaXy11232\' target = \'_blank\'>GitHub</a> account'
+        'I have a <a class = \'links\' href = \'https://github.com/GalaXy11232\' target = \'_blank\'>GitHub</a> account',
+        'I don\'t use Twitter'
     ]
 
     rng = Math.floor(Math.random() * 150 + 1)
 
     if (rng == 69) {
-        document.getElementById('whyyes').innerHTML = '[0] = \'U\''
+        document.getElementById('whyyes').innerHTML = '[1] = \'R\''
         return
     }
     else {
-        document.getElementById('whyyes').innerHTML =  "\"Why yes, " + yes[Math.floor(Math.random() * yes.length)] + ", how could you tell?\" <img src = './Images/nerd.png' alt = '🤓' title = '🤓' onclick = nerd() style = 'width: 30px'>";
-    }
+        document.getElementById('whyyes').innerHTML =  "\"Why yes, " + abme[Math.floor(Math.random() * abme.length)] + ", how could you tell?\" <img src = './Images/nerd.png' alt = '🤓' title = '🤓' onclick = nerd() style = 'width: 30px'>";
+    }document.getElementById('4r').title = '[4] = f';
 })
 
-let count = 1
-function info_progr() {
-    count += 1;
-    let link = document.getElementById('info_progr')
-
-    if (count % 2 == 0) {
-        link.setAttribute('title', 'Click to shorten')
-        document.getElementById('info_progr').innerHTML = `<li>Small, still learning programmer</li>
-        &nbsp;&nbsp;&nbsp;&nbsp;Known programming languages (by far): 
-      <ul><strong>
-        <li>Python</li>
-        <li>HTML?</strong> (Let's consider it a programming language)
-        <strong><li>JavaScript</li>
-        <li>C++</strong> (a tiny portion)</li></ul>`;
-    }
-    else {
-        link.setAttribute('title', 'Click to expand')
-        document.getElementById('info_progr').innerHTML = `<li>Small, still learning programmer</li>`
-    }
-}
-
 function copy(id) {
+    if (id == '3') {
+        alert('[3] = W');
+        return;
+    }
+
     let copyT = document.getElementById(id);
 
     copyT.addEventListener('click', () => {
@@ -54,25 +39,16 @@ function copy(id) {
     })
 }
 
-var change = {
-    "html-snippet": `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Name - Location</title>
-    </head>
-    <body>
-      
-    </body>
-    </html>`
-}
 function changecd(value) {
     let rewrite = document.getElementById('showstuff');
-    rewrite.setAttribute('style', 'white-space: pre;')
+        rewrite.setAttribute('text-align', 'none');
+        rewrite.setAttribute('style', 'white-space: pre');
+    let headr = document.getElementById('showstuff-hd');
+
+    if (value == 'lorem') {rewrite.setAttribute('style', 'white-space: nowwrap'); rewrite.setAttribute('style', 'text-align: center');}
 
     rewrite.textContent = change[value];
+    headr.textContent = headers[value];
 }
 
 function nerd() {
@@ -80,7 +56,32 @@ function nerd() {
 }
 
 function show() { // [1]
-    document.getElementById('shoo').innerHTML = '[1] = R'
+    document.getElementById('shoo').innerHTML = '[2] = 9'
+}
+
+let once1 = 1
+function usefulstuff() {
+    if (once1 == 1) {
+    let zero = document.getElementById('showstuff-container');
+    zero.innerHTML = `<h1 id = 'showstuff-hd' class = 'text-center py-2' style = 'color: orange'></h1>
+    <p id = 'showstuff' style = 'text-align: center;'>[0] <span title = '/solve🤡.html'>=</span> U</span></p>`;
+    zero.title = 'Have fun finding the rest :)'
+}
+    once1 += 1;
+}
+
+function solve() {
+    let nr = document.getElementById('result').value;
+    if (nr == 36) {
+        document.getElementById('tecct').innerHTML = `Congrats, you used a calculator🤡! <br><br> <mark>[9] = e (the last one)</mark> <br> now put them all in a discord invite link :)`
+    }
+    else {
+        document.getElementById('tecct').textContent = `Oops! You messed up!`;
+        setTimeout(() => {
+            w = window.open('.');
+            w.onload = self.close();
+        }, 2000)
+    }
 }
 
 /* function e1() {
