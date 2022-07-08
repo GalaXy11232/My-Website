@@ -11,6 +11,12 @@ window.addEventListener('load', () => {
     ]
 
     rng = Math.floor(Math.random() * 150 + 1)
+    rng_short = Math.floor(Math.random() * 4 + 1)
+
+    if (rng_short == 2) {
+        document.getElementById('whyyes').innerHTML = '☆ Moderator pe IceTeam (IceTeam TOP) // <u><a class = \'links\' target = \'_blank\' href = \'https://discord.gg/SDNG6weZw3\' title = "Join our community!">Intrati aici</a></u> ☆';
+        return
+    }
 
     if (rng == 69) {
         document.getElementById('whyyes').innerHTML = '[1] = \'R\''
