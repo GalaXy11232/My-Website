@@ -1,0 +1,253 @@
+/* IMPORTED STUFF */
+
+@font-face {
+    font-family: Grobold;
+    src: url('./CustomFonts/Grobold/GROBOLD.ttf'); }
+@font-face {
+    font-family: Dinosaur;
+    src: url('./CustomFonts/Dinosaur/Dinosaur.ttf'); }
+@font-face { 
+    font-family: Panipuri;
+    src: url('./CustomFonts/Panipuri/Panipuri.ttf'); }
+
+/* BASIC STUFF */
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rgb(0, 175, 206);
+}
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+body {
+    background: no-repeat center center fixed;
+    background-image: url("./Images/bg.png");
+    background-size: cover;
+   
+}
+
+
+/* IDs */
+
+#links {
+    background-color: rgb(75, 27, 99);
+    text-decoration: none;
+    padding: 6px;
+}
+#links:hover {
+    background-color: rgb(153, 57, 201);
+    color:white;
+}
+#links-btn {
+    background-color: darkslategray; 
+    padding: 6px;
+    color: peachpuff; 
+    border: 1px solid orange;
+    border-radius: 7px;
+}
+#links-btn:hover {
+    background-color: slategray;
+    color: white;
+}
+
+#buttons {
+    border: none;
+    background-color: rgb(75, 27, 99);
+    text-decoration: none;
+    padding: 6px;
+}
+#buttons:hover {
+    background-color: rgb(153, 57, 201);
+    color:white;
+}
+
+#navbar {
+    display: none;
+}
+#logo {
+    display: block;
+}
+
+#showstuff-container {
+    display: block;
+    margin: 0 auto;
+    overflow-y: scroll;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 85%;
+    height: 400px;
+}
+
+#sidebar {
+    height: 100%;
+    position: fixed;
+    width: 15%;
+    float: left;
+}
+#content {
+    margin: auto;
+    width: 85%;
+    float: right;
+}
+@media (max-width: 900px) {
+    #sidebar {display: none;}
+    #content {width: 100%;}
+    #navbar {display: block;}
+}
+@media (max-width: 750px) {
+    .repls {width: 125px}
+}
+@media (max-width: 450px) {
+    #logo {display: none;}
+    .repls {width: 80px}
+}
+
+/* #replit-s {
+    border-right: 2px solid white;
+}
+.replit-col {
+    border-right: 2px solid white; 
+    border-left: 2px solid white
+}
+#replit-e {
+    border-left: 2px solid white;
+}
+
+@media (max-width: 575px) {
+    #replit-s {border: none; border-bottom: 2px solid white;}
+    .replit-col {
+        border: none; 
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    #replit-e {border: none; border-top: 2px solid white;}
+} */
+
+#etrue {
+    opacity: 0;
+    transition: opacity 1s;
+}
+#e1 {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    bottom: 0;
+}
+#ee1 {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    bottom: 0;
+}
+#e2 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+#top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6.25%;
+    background:#380033;
+    z-index: 69;
+	border-radius: 0px 0px 10px 10px;
+    border: 2.5px solid rgb(26, 26, 26);
+	display: block;
+	transition: top 0.3s;
+}
+
+#title {
+    font-size: 250%;
+    padding-top: 8%;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+#main-body {
+    background-image: linear-gradient(rgb(219, 0, 219),rgb(88, 0, 71));
+    border-radius: 10px 10px 10px 10px;
+    border: 2.5px solid black;
+    text-align: centers;
+}
+
+#homee {
+    display: flex;
+    justify-content: center;
+    height: 120%;
+}
+
+#home:hover {
+    box-shadow: 1px 1px 10px rgb(156, 0, 0);
+    transition: box-shadow 0.3s ease-out;
+}
+
+#info {
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+#info:hover {
+    box-shadow: 1px 1px 10px rgb(156, 0, 0);
+    transition: box-shadow 0.3s ease-out;
+}
+
+#discord {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+#discord:hover {
+    box-shadow: 1px 1px 10px rgb(156, 0, 0);
+    transition: box-shadow 0.3s ease-out;
+}
+
+/* CLASSES */
+
+.links {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.links:hover {
+    color: rgb(78, 211, 255);
+}
+
+hr.hr {
+    border-top: 3px solid white;
+    opacity: 1;
+}
+
+.explain {
+    font-size: 150%;
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.topbars {
+    height: 75%;
+    display: block;
+}
+
+.mainimg {
+    height: 15%; 
+    position: absolute;  
+    top: 50%; 
+    transition: height 0.3s ease-in-out;
+}
+.mainimg:hover {
+    height: 18%;
+}
+
+
+/* ANIMATIONS AND OTHER */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GalaXy - Useful Stuff</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my website, with a lot more information than the about me on discord.">
+    <link rel = 'icon' href = './Images/Logo.png'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src = "script.js"></script>
+    <script type="text/javascript" src = "stuff.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style = 'background-color: black;'> <!--Here belong some snippets idk-->
+
+    <span id = 'topcinco' class = 'small' style = 'position: absolute; opacity: 0.2; z-index: 1;'>[5] = N</span>
+    <nav class = 'navbar navbar-expand-sm bg-dark text-light rounded-bottom' id = 'navbar'>
+        <div class = 'container-fluid'> <!--'-->
+          <a id = 'logo' href = './index.html'><img src = './Images/Logo.png' alt = 'Logo' title = 'Logo' style = 'width: 45%'></a>
+  
+            <a title = 'Home' class = 'link-info rounded border border-info text-center' id = 'links' href = './index.html'>Home</a>
+            <a title = 'Socials' class = 'link-info rounded border border-info text-center' id = 'links' href = './socials.html'>Socials</a>
+            <a title = 'Useful Stuff (maybe)' class = 'link-info rounded border border-info text-center' id = 'links' href = './usefulstuff.html'>Useful Stuff</a>
+        </div>
+      </nav>
+  
+      <div class = 'container text-white bg-dark' id = 'sidebar'>
+        <a href = '.'><img class = 'd-block m-auto pt-2' src = './Images/Logo.png' alt = 'Logo' title = 'Logo' style = 'width: 43%'></a>
+        <hr>
+        <ul class = 'navbar-nav'>
+          <li class = 'nav-item py-2'> <a title = 'Home' class = 'nav-link link-info rounded border border-info text-center' id = 'links' href = './index.html'>Home</a> </li>
+          <li class = 'nav-item py-2'> <a title = 'Socials' class = 'nav-link link-info rounded border border-info text-center' id = 'links' href = './socials.html'>Socials</a> </li>
+          <li class = 'nav-item py-2'> <a title = 'Useful Stuff (maybe)' class = 'nav-link link-info rounded border border-info text-center' id = 'links' href = './usefulstuff.html'>Useful Stuff</a> </li>
+        </ul>
+      </div>
+
+      <div class = 'container-fluid text-white' id = 'content'>
+        <div class = 'text-center pt-2'>
+          <h1 style = 'font-family: Panipuri;'><a style = 'text-decoration: none; color: rgb(255, 86, 249)' title = 'U̼s̼e̼f̼u̼l̼ Stuff' onclick = usefulstuff() ><&nbspUseful Stuff&nbsp></a></h1> <hr> <!-- -->
+        </div>
+    
+
+        <div class = 'row pb-4'>
+            <div class = 'col-sm text-center'>
+                <button id = 'links-btn' style = 'margin-right: 5px;' onclick = "changecd('html-snippet')">Html Snippet</button>
+                <button id = 'links-btn' style = 'margin-right: 5px; margin-left: 5px;' onclick = "changecd('lorem')">Lorem Ipsum</button>
+            </div>
+        </div>
+
+        
+        <div id = 'showstuff-container' class = 'bg-dark'>
+          <h1 id = 'showstuff-hd' class = 'text-center py-2' style = 'color: orange'></h1>
+          <p id = 'showstuff' style = 'text-align: center;'><span style = 'color: gray;'>[Press one of the buttons]</span></p>
+        </div>
+</body>
+</html>
